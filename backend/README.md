@@ -22,5 +22,6 @@ Princípio do SOLID sobre não repetir códigos na aplicação(regras de négoci
 
 ## Método create do repository
 
-Esse método não cria insere os dados no banco, cria somente uma instância da entidade
+Esse método cria somente uma instância da entidade
+
 para salvar no banco de dados -> await <custom_repository>.save(<created_entity>)
