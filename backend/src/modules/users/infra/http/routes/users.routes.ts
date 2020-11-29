@@ -3,7 +3,6 @@ import multer from 'multer';
 
 import uploadConfig from '@config/upload';
 
-import UpdateUserAvatarService from '@modules/users/services/UpdateUserAvatarService';
 import UsersController from '../controllers/UsersController';
 import UserAvatarController from '../controllers/UserAvatarController';
 
