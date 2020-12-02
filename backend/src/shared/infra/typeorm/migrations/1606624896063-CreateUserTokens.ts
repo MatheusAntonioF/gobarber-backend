@@ -17,6 +17,8 @@ export default class CreateUserTokens1606624740772
           {
             name: 'token',
             type: 'uuid',
+            generationStrategy: 'uuid',
+            default: 'uuid_generate_v4()',
           },
           {
             name: 'user_id',
@@ -48,6 +50,6 @@ export default class CreateUserTokens1606624740772
   }
 
   public async down(queryRunner: QueryRunner): Promise<void> {
-    await queryRunner.dropTable('user_token');
+    await queryRunner.dropTable('user_tokens');
   }
 }
